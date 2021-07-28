@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <!--Meta tags-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Academo</title>
+  <link rel="shortcut icon" href="images/Academo_logo.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<!--Body Section-->
+
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+
+          <div class="navbar-brand">
+            <a href="#" class="pull-left"><img src="images/Academo_logo.png" class="logo" alt="Academo"></a>
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav"
+            aria-expanded="true" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#" class="active">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#videos">Videos</a>
+            </li>
+            <li>
+              <a href="#contactus">Contact Us</a>
+            </li>
+            <li>
+              <!--search icon-->
+              <a href="#search"><i class="glyphicon glyphicon-search hidden-xs"></i></a>
+              <a href="#search" class="visible-xs hidden-lg hidden-md hidden-xl">Search</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="main-content" class="scroll">
+    
+    <!-- Mobile View -->
+    <a href="#main-content2"><span class="glyphicon glyphicon-menu-down hidden-xs"></span></a>
+
+  </section>
+
+  <section id="main-content2">
+    <div class="container block">
+       <div class="row">
+
+   <!--1st form-->
+          <div id="left-form" class="col-lg-6 col-xl-6 col-md-6 col-sm-6">
+             <div class="row form-content">
+                <div class="col-xs-12 col-sm-12">
+                   <div class="top-color"></div>
+                   <div class="body">
+                      <h2>TIME IN</h2>
+                      <p>Attendance login :</p>
+                      <p style="color: #FF0000;">*Required</p>
+                   </div>
+                </div>
+             </div>
+     
+             <div class="row form-content">
+                <div class="col-xs-12 col-sm-12">
+                   <div class="top"></div>
+                   <div class="body">
+                      <p>Name <span class="req-color">*</span></p>
+                      <br>
+                      <input type="text" name="name1" id="name1" placeholder="Your answer" required>
+                   </div>
+                </div>
+             </div>
+     
+             <div class="row form-content">
+                <div class="col-xs-12 col-sm-12">
+                   <div class="top"></div>
+                   <div class="body">
+                      <p>Time In <span class="req-color">*</span></p>
+                      <br>
+                      <span style="color: #999999;">Time</span><br>
+                      <input class="without_ampm" type="time" min="08:00" max="23:00" name="time_in" id="time_in" required>
+          <span class="validity"></span>
+          
+                      <select name="meridiem" id="GMT">
+                         <option value="AM">AM</option>
+                         <option value="PM">PM</option>
+                      </select>
+                   </div>
+                </div>
+             </div>
+             <button type="submit" id="btn">Submit</button>
+          </div>
+    
+    <!--Second form-->
+          <div id="right-form" class="col-lg-6 col-xl-6 col-md-6 col-sm-6">
+             <div class="row form-content">
+                <div class="col-xs-12 col-sm-12">
+                   <div class="top-color2"></div>
+                   <div class="body">
+                      <h2>TIME OUT</h2>
+                      <p>Attendance login :</p>
+                      <p style="color: #FF0000;">*Required</p>
+                   </div>
+                </div>
+             </div>
+     
+             <div class="row form-content">
+                <div class="col-xs-12 col-sm-12">
+                   <div class="top"></div>
+                   <div class="body">
+                      <p>Name <span class="req-color">*</span></p>
+                      <br>
+                      <input type="text" name="name2" id="name2" placeholder="Your answer" required>
+                   </div>
+                </div>
+             </div>
+     
+             <div class="row form-content">
+                <div class="col-xs-12 col-sm-12">
+                   <div class="top"></div>
+                   <div class="body">
+                      <p>Time Out <span class="req-color">*</span></p>
+                      <br>
+                      <span style="color: #999999;">Time</span><br>
+                      <input class="without_ampm" type="time" min="08:00" max="23:00" name="time_out" id="time_out" required>
+          <span class="validity"></span>
+                      <select name="meridiem" id="GMT2">
+                         <option value="AM">AM</option>
+                         <option value="PM">PM</option>
+                      </select>
+                   </div>
+                </div>
+             </div>
+             <button type="submit" id="btn2">Submit</button>
+          </div>
+       </div>
+    </div>
+ </section>
+  </div>
+  <footer>
+    &#169; 2021 Academo Inc. All rights reserved
+  </footer>
+
+  
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
